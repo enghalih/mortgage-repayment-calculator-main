@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Google Font: Plus Jakarta Sans */
+@import "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap";
+
+@theme {
+  /* ---------- Colors (Style Guide) ---------- */
+  --color-lime: #d8db2f;
+  --color-slate-900: #133041;
+  --color-slate-700: #4e6e7e;
+  --color-slate-500: #6b94a8;
+  --color-slate-300: #9abed5;
+  --color-slate-100: #e4f4fd;
+  --color-white: #ffffff;
+  --color-red: #d73328;
+  --color-darker: hsla(0,0%,0%,0.25);
+
+  /* ---------- Font family ---------- */
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* ---------- Spacing scale (500=40px, 400=32px, 300=24px, 200=16px, 150=12px, 100=8px) ---------- */
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+
+  /* Letter spacing -1px (untuk preset Bold) */
+  --tracking-preset: -1px;
+
+  /* ---------- Typography presets ---------- */
+  /* Preset 1: 56px, 125%, Bold → gunakan text-preset-1 font-bold tracking-preset */
+  --text-preset-1: 56px;
+  --text-preset-1--line-height: 1.25;
+  /* Preset 2: 24px, 125%, Bold */
+  --text-preset-2: 24px;
+  --text-preset-2--line-height: 1.25;
+  /* Preset 3: 18px, 125%, Bold */
+  --text-preset-3: 18px;
+  --text-preset-3--line-height: 1.25;
+  /* Preset 4: 16px, 150%, Medium */
+  --text-preset-4: 16px;
+  --text-preset-4--line-height: 1.5;
+  /* Preset 5: 14px, 150%, Medium */
+  --text-preset-5: 14px;
+  --text-preset-5--line-height: 1.5;
+
+  /* Card shadow (Figma: 0 32px 64px slate-900 10%) */
+  --shadow-card: 0 32px 64px rgb(19 48 65 / 0.1);
+}
+
+/* Base: apply font-sans globally if desired */
+body {
+  font-family: var(--font-sans);
+}
